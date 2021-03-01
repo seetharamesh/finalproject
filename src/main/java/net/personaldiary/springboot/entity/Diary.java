@@ -14,9 +14,9 @@ import javax.persistence.Table;
 @Table(name="diary")
 public class Diary {
 	
-	//private Diary() {}
+	private Diary() {}
 	
-	public Diary(Date date,String entry) {
+	public Diary(String date,String entry) {
 		this.date = date;
 		this.entry = entry;
 	}
@@ -30,12 +30,12 @@ public class Diary {
 	private String entry;
 	
 	@Column(name="date")
-	private Date date;
+	private String date;
 	
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public Long getId() {

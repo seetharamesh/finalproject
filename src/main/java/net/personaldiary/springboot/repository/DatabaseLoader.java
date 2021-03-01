@@ -19,6 +19,7 @@ public class DatabaseLoader implements CommandLineRunner {
 //	The run() method is invoked with command line arguments, loading up your data.
 	@Override
 	public void run(String... args) throws Exception {
-		this.repository.save(new Diary(new java.util.Date(),"First day of springboot-- tested so many times"));		
+		System.out.println("Inside DatabaseLoader Testing Testing Testing");
+		//this.repository.save(new Diary(new java.util.Date(),"First day of springboot-- tested so many times"));		
 	}
 }
